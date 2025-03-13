@@ -7,11 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Java version
-        run: java -version
+        run: java --version
       - name: Maven version
         run: mvn --version
       - name: Checkout repo
         uses: actions/checkout@v4
       - name: Maven test
         run: mvn test
-
